@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haka Cirúrgica - Fale Conosco</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="attached_assets/logo-oficial_1754074975929.png" alt="Haka Cirúrgica" class="header-logo-img">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Left side - Contact Info -->
+                <section class="contact-section">
+                    <h1 class="contact-title">Fale conosco:</h1>
+
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" fill="#4285F4"/>
+                            </svg>
+                            <span>Telefone: (16) 3236-7457</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#4285F4"/>
+                            </svg>
+                            <span>E-mail: comercial@hakacirurgica.com.br</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#4285F4"/>
+                            </svg>
+                            <div class="address-text">
+                                <span>Rua Milton José Robusti, 75 (Sala 608) - Jardim Botânico</span>
+                                <span>Ribeirão Preto - SP</span>
+                                <span>CEP: 14021-613</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right side - Map -->
+                <section class="map-section">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.0892!2d-47.8064!3d-21.1699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf8f0d7c7c7d%3A0x1234567890abcdef!2sRua%20Milton%20Jos%C3%A9%20Robusti%2C%2075%20-%20Jardim%20Bot%C3%A2nico%2C%20Ribeir%C3%A3o%20Preto%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map-overlay">
+                            <div class="map-info">
+                                <strong>Haka Cirúrgica</strong>
+                                <p>Rua Milton José Robusti, 75 – Sala 608<br>Jardim Botânico / Ribeirão Preto - SP<br>CEP: 14021-613</p>
+                                <div class="map-links">
+                                    <a href="#" class="map-link">Ver mapa ampliado</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Bottom section - Contact Form -->
+            <section class="form-section">
+                <div class="form-container">
+                    <h2 class="form-title">Entre em Contato</h2>
+
+                    <form class="contact-form" action="https://formspree.io/f/movlnagp" method="POST">
+                        <div class="form-row">
+                            <input type="text" name="nome" placeholder="Nome" class="form-input">
+                            <input type="text" name="sobrenome" placeholder="Sobrenome" class="form-input">
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" name="celular" placeholder="Celular" class="form-input">
+                            <input type="email" name="email" placeholder="Email*" class="form-input" required>
+                        </div>
+                        <textarea name="mensagem" placeholder="Mensagem" class="form-textarea"></textarea>
+                        <button type="submit" class="form-submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Haka Cirúrgica. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
