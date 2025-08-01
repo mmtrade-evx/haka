@@ -17,18 +17,24 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header */
 .header {
     background: #fff;
-    padding: 20px 40px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.header .logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
 }
 
 .logo {
@@ -54,6 +60,8 @@ body {
     padding: 60px 40px;
     background: #f8f9fa;
     align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Contact Section */
@@ -165,12 +173,14 @@ body {
 /* Form Section */
 .form-section {
     background: #fff;
-    padding: 60px 40px;
+    padding: 60px 0;
+    width: 100%;
 }
 
 .form-container {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .form-title {
@@ -294,7 +304,15 @@ body {
     }
 
     .header {
-        padding: 15px 20px;
+        padding: 15px 0;
+    }
+
+    .header .logo {
+        padding: 0 20px;
+    }
+
+    .form-container {
+        padding: 0 20px;
     }
 }
 
