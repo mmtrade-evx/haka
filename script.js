@@ -63,18 +63,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add form field names for proper form handling
-    const inputs = document.querySelectorAll('.form-input');
-    const placeholders = ['nome', 'sobrenome', 'celular', 'email'];
-    
-    inputs.forEach((input, index) => {
-        if (placeholders[index]) {
-            input.name = placeholders[index];
-        }
-    });
-    
-    const textarea = document.querySelector('.form-textarea');
-    if (textarea) {
-        textarea.name = 'mensagem';
+    // Form validation
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#ff4444';
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            }
+        });
     }
 });
